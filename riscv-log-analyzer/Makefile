@@ -8,7 +8,7 @@ OUT_DIR := output
 LOGS := $(wildcard $(LOG_DIR)/*.log)
 
 # Default target
-.DEFAULT_GOAL := help
+.DEFAULT_GOAL := all
 
 ## all: Run the analyzer on all test log files
 all:
