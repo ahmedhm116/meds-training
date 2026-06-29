@@ -8,6 +8,7 @@
 #define MEM_SIZE    65536  //64KB memory size
 #define PC_START    0x00000000
 #define OPCODE_MASK 0x7F
+#define MAX_MNEMONIC_LEN 16
 
 #define EXTRACT_BITS(value,start,end) (((value) >> (start)) & ((1 << ((end) - (start) + 1)) - 1))
 
