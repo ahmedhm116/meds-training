@@ -1,0 +1,21 @@
+# Ignore the generated reports folder
+output/
+
+# Ignore log files generally 
+*.log
+
+# OS Files
+.DS_Store
+
+Thumbs.db
+
+# IDE Files
+.vscode/
+*.code-workspace
+
+# Build artifacts
+*.o
+*.out
+*.d
+bin/
+build/
