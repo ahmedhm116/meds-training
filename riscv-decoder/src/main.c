@@ -53,34 +53,34 @@ static void print_instruction(uint32_t addr, decoded_instr_t *d){
     switch (d->opcode)
     {
     case OP_R_TYPE:
-        printf("0x%08x %08x %-8s x%u, x%u, x%u\n", addr, d->instr, d->mnemonic, d->rd, d->rs1, d->rs2);
+        printf("0X%08x %08x %-8s x%u, x%u, x%u\n", addr, d->instr, d->mnemonic, d->rd, d->rs1, d->rs2);
         break;
     case OP_I_ARI_TYPE:
-        printf("0x%08x %08x %-8s x%u, x%u, %d\n", addr, d->instr, d->mnemonic, d->rd, d->rs1, d->imm);
+        printf("0X%08x %08x %-8s x%u, x%u, %d\n", addr, d->instr, d->mnemonic, d->rd, d->rs1, d->imm);
         break;
     case OP_I_LOAD_TYPE:
-        printf("0x%08x %08x %-8s x%u, %d(x%u)\n", addr, d->instr, d->mnemonic, d->rd, d->imm, d->rs1);
+        printf("0X%08x %08x %-8s x%u, %d(x%u)\n", addr, d->instr, d->mnemonic, d->rd, d->imm, d->rs1);
         break;
     case OP_S_TYPE:
-        printf("0x%08x %08x %-8s x%u, %d(x%u)\n", addr, d->instr, d->mnemonic, d->rs2, d->imm, d->rs1);
+        printf("0X%08x %08x %-8s x%u, %d(x%u)\n", addr, d->instr, d->mnemonic, d->rs2, d->imm, d->rs1);
         break;
     case OP_B_TYPE:
-        printf("0x%08x %08x %-8s x%u, x%u, %d\n", addr, d->instr, d->mnemonic, d->rs1, d->rs2, d->imm);
+        printf("0X%08x %08x %-8s x%u, x%u, %d\n", addr, d->instr, d->mnemonic, d->rs1, d->rs2, d->imm);
         break;
     case OP_U_LUI_TYPE:
-        printf("0x%08x %08x %-8s x%u, %d\n", addr, d->instr, d->mnemonic, d->rd, d->imm);
+        printf("0X%08x %08x %-8s x%u, %d\n", addr, d->instr, d->mnemonic, d->rd, d->imm);
         break;
     case OP_U_AUIPC_TYPE:
-        printf("0x%08x %08x %-8s x%u, %d\n", addr, d->instr, d->mnemonic, d->rd, d->imm);
+        printf("0X%08x %08x %-8s x%u, %d\n", addr, d->instr, d->mnemonic, d->rd, d->imm);
         break;
     case OP_J_JAL_TYPE:
-        printf("0x%08x %08x %-8s x%u, %d\n", addr, d->instr, d->mnemonic, d->rd, d->imm);
+        printf("0X%08x %08x %-8s x%u, %d\n", addr, d->instr, d->mnemonic, d->rd, d->imm);
         break;
     case OP_I_JALR_TYPE:
-        printf("0x%08x %08x %-8s x%u, x%u, %d\n", addr, d->instr, d->mnemonic, d->rd, d->rs1, d->imm);
+        printf("0X%08x %08x %-8s x%u, x%u, %d\n", addr, d->instr, d->mnemonic, d->rd, d->rs1, d->imm);
         break;
     default:
-        printf("0x%08x %08x %-8s\n", addr, d->instr, d->mnemonic);
+        printf("0X%08x %08x %-8s\n", addr, d->instr, d->mnemonic);
         break;
     }
 }
